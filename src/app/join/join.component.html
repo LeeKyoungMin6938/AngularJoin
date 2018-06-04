@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Admin</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row main">
+				<div class="panel-heading">
+	               <div class="panel-title text-center">
+	               		<h1 class="title">TomaToma</h1>
+	               		<hr />
+	               	</div>
+	            </div>
+				<div class="main-login main-center">
+					<form class="form-horizontal" (ngSubmit)="onSubmit()"> <!-- 수정필요 -->
+
+						<div class="form-group">
+							<label for="uid" class="cols-sm-2 control-label">ID</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+									<!-- <input type="text" class="form-control" name="uid" placeholder="이메일을 입력해주세요" [(ngModel)]="user.uid"/> -->
+									<input type="text" class="form-control" name="uid" placeholder="이메일을 입력해주세요"/>
+                  <p>{{user.uid}}</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="upw" class="cols-sm-2 control-label">Password</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="password" class="form-control" name="upw" id="upw"  placeholder="비밀번호를 입력해주세요"/>
+                  <input type="password" class="form-control" name="upw2" id="upw2"  placeholder="비밀번호 확인"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="uname" class="cols-sm-2 control-label">Name</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uname" id="uname"  placeholder="성함을 입력해주세요"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="uphone" class="cols-sm-2 control-label">Phone</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uphone" id="uphone"  placeholder="연락처를 입력해주세요"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="uaddr1" class="cols-sm-2 control-label">address1</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uaddr1" id="uaddr1"  placeholder="주소1"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="uaddr2" class="cols-sm-2 control-label">address2</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uaddr2" id="uaddr2"  placeholder="주소2"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="uaddr3" class="cols-sm-2 control-label">address3</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uaddr3" id="uaddr3"  placeholder="주소3"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="ubirth" class="cols-sm-2 control-label">Birth</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="ubirth" id="ubirth"  placeholder="생년월일(920101)"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="ugender" class="cols-sm-2 control-label">Gender</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="ugender" id="ugender"  placeholder="성별(남,여)"/>
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group ">
+							<button type="submit" class="btn btn-primary btn-lg btn-block login-button">회원가입</button>
+						</div>
+						<div class="login-register">
+				            <a href="index.php">로그인</a>
+				         </div>
+					</form>
+				</div>
+			</div>
+		</div>
+
+		<script type="text/javascript" src="assets/js/bootstrap.js"></script>
+	</body>
+</html>
