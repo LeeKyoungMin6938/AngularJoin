@@ -21,8 +21,8 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
-									<!-- <input type="text" class="form-control" name="uid" placeholder="이메일을 입력해주세요" [(ngModel)]="user.uid"/> -->
-									<input type="text" class="form-control" name="uid" placeholder="이메일을 입력해주세요"/>
+									<input type="text" class="form-control" name="uid" placeholder="이메일을 입력해주세요" [(ngModel)]="user.uid"/>
+									<!-- <input type="text" class="form-control" name="uid" placeholder="이메일을 입력해주세요"/> -->
                   <p>{{user.uid}}</p>
 								</div>
 							</div>
@@ -33,7 +33,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="password" class="form-control" name="upw" id="upw"  placeholder="비밀번호를 입력해주세요"/>
+									<input type="password" class="form-control" name="upw" id="upw"  placeholder="비밀번호를 입력해주세요" [(ngModel)]="user.upw"/>
                   <input type="password" class="form-control" name="upw2" id="upw2"  placeholder="비밀번호 확인"/>
 								</div>
 							</div>
@@ -44,7 +44,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="uname" id="uname"  placeholder="성함을 입력해주세요"/>
+									<input type="text" class="form-control" name="uname" id="uname"  placeholder="성함을 입력해주세요" [(ngModel)]="user.uname"/>
 								</div>
 							</div>
 						</div>
@@ -54,7 +54,7 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="uphone" id="uphone"  placeholder="연락처를 입력해주세요"/>
+									<input type="text" class="form-control" name="uphone" id="uphone"  placeholder="연락처를 입력해주세요" [(ngModel)]="user.uphone"/>
 								</div>
 							</div>
 						</div>
@@ -64,17 +64,17 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="uaddr1" id="uaddr1"  placeholder="주소1"/>
+									<input type="text" class="form-control" name="uaddr1" id="uaddr1"  placeholder="주소1" [(ngModel)]="user.addr1"/>
 								</div>
 							</div>
 						</div>
 
-						<div class="form-group">
+						<!-- <div class="form-group">
 							<label for="uaddr2" class="cols-sm-2 control-label">address2</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="uaddr2" id="uaddr2"  placeholder="주소2"/>
+									<input type="text" class="form-control" name="uaddr2" id="uaddr2"  placeholder="주소2" [(ngModel)]="user.uaddr2"/>
 								</div>
 							</div>
 						</div>
@@ -84,17 +84,17 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="uaddr3" id="uaddr3"  placeholder="주소3"/>
+									<input type="text" class="form-control" name="uaddr3" id="uaddr3"  placeholder="주소3" [(ngModel)]="user.uaddr3"/>
 								</div>
 							</div>
-						</div>
+						</div> -->
 
 						<div class="form-group">
 							<label for="ubirth" class="cols-sm-2 control-label">Birth</label>
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="ubirth" id="ubirth"  placeholder="생년월일(920101)"/>
+									<input type="text" class="form-control" name="ubirth" id="ubirth"  placeholder="생년월일(920101)" [(ngModel)]="user.birth"/>
 								</div>
 							</div>
 						</div>
@@ -104,7 +104,27 @@
 							<div class="cols-sm-10">
 								<div class="input-group">
 									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="ugender" id="ugender"  placeholder="성별(남,여)"/>
+									<input type="text" class="form-control" name="ugender" id="ugender"  placeholder="성별(남,여)" [(ngModel)]="user.ugender"/>
+								</div>
+							</div>
+						</div>
+
+            <div class="form-group">
+							<label for="ugender" class="cols-sm-2 control-label">Smsyn</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="usmsyn" placeholder="Y" [(ngModel)]="user.usmsyn"/>
+								</div>
+							</div>
+						</div>
+
+            <div class="form-group">
+							<label for="ugender" class="cols-sm-2 control-label">Emailyn</label>
+							<div class="cols-sm-10">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+									<input type="text" class="form-control" name="uemailyn"  placeholder="Y" [(ngModel)]="user.uemailyn"/>
 								</div>
 							</div>
 						</div>
